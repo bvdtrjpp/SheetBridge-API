@@ -4,7 +4,7 @@ const path = require('path');
 async function getSheet() {
 
     const auth = new google.auth.GoogleAuth({
-        keyFile: path.join(__dirname, 'crenditals.json'),
+        keyFile: path.join(__dirname, '../crenditals.json'),
         scopes: ['https://www.googleapis.com/auth/spreadsheets.readonly']
     });
 
@@ -21,3 +21,5 @@ async function getSheet() {
     return response.data.values;
     
 }
+
+module.exports = { getSheet };
