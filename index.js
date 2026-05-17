@@ -3,15 +3,15 @@ const app = express();
 const port = 3000;
 
 app.get('/api/preview', (req, res) => {
-  res.send('Hello World!');
+  
 });
 
 app.get('/api/preview', (req, res) => {
-  res.send('Hello World!');
+  
 });
 
-app.get('/api/preview', (req, res) => {
-  res.send('Hello World!');
+app.post('/api/import/status/:id', (req, res) => {
+  
 });
 
 app.listen(port, () => {
